@@ -24,15 +24,15 @@ module.exports = { bot }
 require('./Features/Features')
 require('./Commands/Commands')
 
-// var a = "A5 en 8B"
-// var b = new RegExp(/([A-H][1-8]|[1-8][A-H]) en ([A-H][1-8]|[1-8][A-H])/)
-// if (b.test(a)) {
-//   console.log("oui")
-// }else{
-//   console.log("non")
-// }
-// let l = Number(a.replace(/[A-H]/, ""))
-// let n = Number(a.replace(/[A-H]/, ""))
+ var a = "A5 en 8B"
+ var b = new RegExp(/([A-H][1-8]|[1-8][A-H]) en ([A-H][1-8]|[1-8][A-H])/)
+ if (b.test(a)) {
+   console.log("oui")
+ }else{
+   console.log("non")
+ }
+ let l = Number(a.replace(/[A-H]/, ""))
+ let n = Number(a.replace(/[A-H]/, ""))
 bot.on('message', message => {
     switch (message.content.toUpperCase()) {
         case '!!!RESET':
